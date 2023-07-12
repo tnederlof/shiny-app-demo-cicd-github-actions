@@ -17,11 +17,6 @@ jobs:
         with:
           r-version: 4.1.2
           use-public-rspm: true
-
-      - name: Remove `.Rprofile`
-        shell: bash
-        run: |
-          rm .Rprofile
           
       - uses: r-lib/actions/setup-renv@v2
           
